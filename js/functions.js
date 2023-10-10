@@ -2,6 +2,7 @@ function checkLength (checkString, maxLength) {
     return checkString.length <= maxLength; 
 };
 
+
 function polindrom (checkText) {
     const newString = checkText.replaceAll(' ', '').toLowerCase();
     const halfSymvol = Math.floor(checkText.length/2);
