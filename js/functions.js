@@ -11,11 +11,11 @@ checkLength('проверяемая строка', 10); // false
 function polindrom (checkText) {
   const newString = checkText.replaceAll(' ', '').toLowerCase();
   const halfSymvol = Math.floor(checkText.length / 2);
-for (let i = 0; i < halfSymvol; i++) {
-  if (newString.at(i) !== newString.at(- i -1)){
-    return false;
-  };
-  return true;
+  for (let i = 0; i < halfSymvol; i++) {
+    if (newString.at(i) !== newString.at(- i -1)){
+      return false;
+    };
+    return true;
   }
 }
 
@@ -26,4 +26,4 @@ polindrom('ДовОд'); // true
 // Это не палиндром
 polindrom('Кекс'); // false
 
-polindrom('Лёша на полке клопа нашёл '); // true
+polindrom('Лёша на полке клопа нашёл ');
